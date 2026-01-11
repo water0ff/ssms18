@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ssms18</id>
+    <version>18.0.0</version>
+    <title>SQL Server Management Studio 18 (SSMS)</title>
+
+    <summary>SQL Server Management Studio 18 (SSMS).</summary>
+
+    <authors>Microsoft Corporation</authors>
+    <owners>water0n</owners>
+
+    <licenseUrl>https://learn.microsoft.com/legal/microsoft-website-terms-of-use</licenseUrl>
+    <projectUrl>https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms</projectUrl>
+    <packageSourceUrl>https://github.com/water0n/ssms18</packageSourceUrl>
+
+    <releaseNotes>https://learn.microsoft.com/sql/ssms/release-notes-ssms</releaseNotes>
+
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+
+    <description>
+Install SQL Server Management Studio 18 (SSMS).
+Includes support for:
+- SQL Server
+- Azure SQL
+- Azure SQL Managed Instance
+This package uses the official Microsoft installer and allows silent installation.
+    </description>
+
+    <tags>ssms sql sqlserver sql-server management-studio mssql database microsoft</tags>
+  </metadata>
+</package>
