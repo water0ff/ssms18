@@ -1,0 +1,8 @@
+@"
+.git\
+.git/*
+.github\
+.github/*
+*.nupkg
+*.snupkg
+"@ | Out-File -Encoding utf8 .chocolateyignore
