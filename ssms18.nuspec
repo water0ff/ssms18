@@ -8,13 +8,15 @@
     <summary>SQL Server Management Studio 18 (SSMS).</summary>
 
     <authors>Microsoft Corporation</authors>
-    <owners>water0n</owners>
+    <owners>water0ff</owners>
 
     <licenseUrl>https://learn.microsoft.com/legal/microsoft-website-terms-of-use</licenseUrl>
     <projectUrl>https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms</projectUrl>
-    <packageSourceUrl>https://github.com/water0n/ssms18</packageSourceUrl>
+    <packageSourceUrl>https://github.com/water0ff/ssms18</packageSourceUrl>
 
     <releaseNotes>https://learn.microsoft.com/sql/ssms/release-notes-ssms</releaseNotes>
+    <iconUrl>https://raw.githubusercontent.com/water0ff/ssms18/main/icon.png</iconUrl>
+    <bugTrackerUrl>https://github.com/water0ff/ssms18/issues</bugTrackerUrl>
 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
