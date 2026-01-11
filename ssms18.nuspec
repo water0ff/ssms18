@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<package>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ssms18</id>
     <version>18.0.0</version>
     <title>SQL Server Management Studio 18 (SSMS)</title>
-
     <summary>SQL Server Management Studio 18 (SSMS).</summary>
 
     <authors>Microsoft Corporation</authors>
@@ -13,9 +12,11 @@
     <licenseUrl>https://learn.microsoft.com/legal/microsoft-website-terms-of-use</licenseUrl>
     <projectUrl>https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms</projectUrl>
     <packageSourceUrl>https://github.com/water0ff/ssms18</packageSourceUrl>
-
     <releaseNotes>https://learn.microsoft.com/sql/ssms/release-notes-ssms</releaseNotes>
+
+    <!-- Mejor usar raw.githubusercontent.com para evitar falsos "invalid URL" -->
     <iconUrl>https://raw.githubusercontent.com/water0ff/ssms18/main/icon.png</iconUrl>
+
     <bugTrackerUrl>https://github.com/water0ff/ssms18/issues</bugTrackerUrl>
 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -31,4 +32,13 @@ This package uses the official Microsoft installer and allows silent installatio
 
     <tags>ssms sql sqlserver sql-server management-studio mssql database microsoft</tags>
   </metadata>
+
+  <files>
+    <!-- UNA sola inclusión de tools: aquí excluimos .git / .github para que no se empaque -->
+    <file src="tools\**" target="tools" exclude="**\.git\**;**\.github\**" />
+
+    <file src="ReadMe.md" target="" />
+    <file src="icon.png" target="" />
+    <file src="ssms18.nuspec" target="" />
+  </files>
 </package>
