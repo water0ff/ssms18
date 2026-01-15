@@ -2,43 +2,37 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ssms18</id>
+    <!-- Mantén 18.0.0 si necesitas re-subir “la misma versión” durante moderación -->
     <version>18.0.0</version>
-    <title>SQL Server Management Studio 18 (SSMS)</title>
-    <summary>SQL Server Management Studio 18 (SSMS).</summary>
 
-    <authors>Microsoft Corporation</authors>
+    <title>SQL Server Management Studio 18 (SSMS) - Version Locked</title>
+    <summary>Meta package that installs a fixed SSMS 18.x version via sql-server-management-studio.</summary>
+
+    <authors>Chocolatey Community</authors>
     <owners>water0ff</owners>
 
     <licenseUrl>https://learn.microsoft.com/legal/microsoft-website-terms-of-use</licenseUrl>
     <projectUrl>https://learn.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms</projectUrl>
     <packageSourceUrl>https://github.com/water0ff/ssms18</packageSourceUrl>
     <releaseNotes>https://learn.microsoft.com/sql/ssms/release-notes-ssms</releaseNotes>
-
-    <!-- Mejor usar raw.githubusercontent.com para evitar falsos "invalid URL" -->
     <iconUrl>https://raw.githubusercontent.com/water0ff/ssms18/main/icon.png</iconUrl>
-
     <bugTrackerUrl>https://github.com/water0ff/ssms18/issues</bugTrackerUrl>
 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
     <description>
-Install SQL Server Management Studio 18 (SSMS).
-Includes support for:
-- SQL Server
-- Azure SQL
-- Azure SQL Managed Instance
-This package uses the official Microsoft installer and allows silent installation.
+This is a META package.
+
+It installs a pinned SQL Server Management Studio 18.x version by depending on:
+- sql-server-management-studio [15.0.18424.0] (SSMS 18.12.1)
+
+This provides reproducible installs and avoids accidental upgrades to SSMS 19+.
     </description>
 
-    <tags>ssms sql sqlserver sql-server management-studio mssql database microsoft</tags>
+    <tags>ssms18 ssms sql sqlserver management-studio meta pinned version-locked</tags>
+
+    <dependencies>
+      <dependency id="sql-server-management-studio" version="[15.0.18424.0]" />
+    </dependencies>
   </metadata>
-
-  <files>
-    <!-- UNA sola inclusión de tools: aquí excluimos .git / .github para que no se empaque -->
-    <file src="tools\**" target="tools" exclude="**\.git\**;**\.github\**" />
-
-    <file src="ReadMe.md" target="" />
-    <file src="icon.png" target="" />
-    <file src="ssms18.nuspec" target="" />
-  </files>
 </package>
